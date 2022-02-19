@@ -1,6 +1,5 @@
 pipeline {
   agent any
-  }
   stages {
     stage('Build') {
       steps {
@@ -9,16 +8,3 @@ pipeline {
     }
   }
   }
-//   post 
-//   {
-//     always {
-//       script {
-//         if (env.BRANCH_NAME != 'master') {
-//           sh '''
-//             docker-compose down
-//           '''
-//         }
-//       }
-//     }
-//   }
-//}
